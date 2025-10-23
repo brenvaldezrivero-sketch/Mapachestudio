@@ -29,5 +29,6 @@ Si querés correr el proyecto localmente:
 
 1. Cloná el repositorio  
    ```bash
-   git clone https://github.com/usuario/estudio-creativo-web.git
+   git clone https://github.com/brenvaldezrivero-sketch/Mapachestudio.git
+
 
