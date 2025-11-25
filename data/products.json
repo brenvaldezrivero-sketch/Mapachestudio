@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Pack Branding",
+    "price": 150,
+    "description": "Diseño de identidad visual completa.",
+    "image": "assets/branding.png"
+  },
+  {
+    "id": 2,
+    "title": "UX/UI Website",
+    "price": 300,
+    "description": "Diseño de interfaz y experiencia de usuario.",
+    "image": "assets/uxui.png"
+  },
+  {
+    "id": 3,
+    "title": "Ilustración Personalizada",
+    "price": 80,
+    "description": "Ilustración minimalista a línea.",
+    "image": "assets/ilustracion.png"
+  },
+  {
+    "id": 4,
+    "title": "Taza personalizada",
+    "price": 20,
+    "description": "Taza con diseño exclusivo.",
+    "image": "assets/taza.png"
+  },
+  {
+    "id": 5,
+    "title": "Totebag personalizada",
+    "price": 25,
+    "description": "Totebag 100% algodón con ilustración a línea.",
+    "image": "assets/placeholder.png"
+  },
+  {
+    "id": 6,
+    "title": "Llavero acrílico",
+    "price": 12,
+    "description": "Llavero con diseño minimalista.",
+    "image": "assets/placeholder.png"
+  }
+]

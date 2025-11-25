@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapache Estudio — Diseño que conecta</title>
+  <meta name="description" content="Estudio de diseño minimalista: branding, UX/UI, ilustración y productos personalizados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo" aria-label="Mapache Estudio">Mapache Estudio</a>
+      <ul class="menu">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#carrito">Carrito <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="nosotros" class="hero container">
+      <h1>Diseño que conecta marcas</h1>
+      <p>Somos Mapache Estudio: diseño minimalista, claro y funcional. Ayudamos a marcas a comunicar con identidad, estrategia y buen gusto.</p>
+      <div class="cta">
+        <a class="btn" href="#productos">Ver catálogo</a>
+        <a class="btn ghost" href="#contacto">Contacto</a>
+      </div>
+    </section>
+
+    <section class="container servicios">
+      <article><h3>Branding</h3><p>Identidad visual y manual de marca.</p></article>
+      <article><h3>UX / UI</h3><p>Interfaces claras y diseño de producto.</p></article>
+      <article><h3>Ilustración</h3><p>Ilustraciones a línea y composiciones minimalistas.</p></article>
+      <article><h3>Impresos</h3><p>Tazas, totes, llaveros y más.</p></article>
+    </section>
+
+    <section id="productos" class="container productos">
+      <h2>Catálogo</h2>
+      <div id="product-grid" class="grid"></div>
+    </section>
+
+    <section id="favoritos" class="container productos">
+      <h2>Favoritos</h2>
+      <div id="favorites-grid" class="grid"></div>
+    </section>
+
+    <section id="multimedia" class="container multimedia">
+      <h2>Multimedia</h2>
+      <p>Un vistazo a nuestro proceso de diseño.</p>
+      <div class="media-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9No-FiEInLA" title="Video de diseño" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contacto" class="container contacto">
+      <h2>Contacto</h2>
+      <form id="contact-form" action="https://formspree.io/f/xnnywyez" method="POST" novalidate>
+        <div id="form-messages" aria-live="polite" role="status"></div>
+        <label>Nombre<input type="text" name="nombre" required minlength="2" /></label>
+        <label>Correo electrónico<input type="email" name="email" required /></label>
+        <label>Teléfono<input type="tel" name="telefono" pattern="^[0-9+\-\s]{6,}$" /></label>
+        <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+
+    <section id="carrito" class="container carrito">
+      <h2>Tu carrito</h2>
+      <div id="cart-list"></div>
+      <p id="cart-total"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-columns">
+      <div><h4>Contacto</h4><p>📞 +54 11 5555-5555</p><p>✉ hola@mapacheestudio.com</p></div>
+      <div><h4>Redes</h4><p>Instagram | Behance | LinkedIn | Dribbble</p></div>
+      <div><h4>Ubicación</h4><p>Calle Ficticia 123, CABA</p><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!" width="100%" height="120" style="border:0;" allowfullscreen></iframe></div>
+    </div>
+    <div class="container footer-bottom"><small>© 2025 Mapache Estudio.</small></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
