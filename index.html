@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapache Estudio — Diseño que conecta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="sticky">
+<nav class="container nav-bar">
+<a href="#" class="logo">Mapache Estudio</a>
+<ul class="menu">
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#favoritos">Favoritos</a></li>
+<li><a href="#productos">Catálogo</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="login.html">Login</a></li>
+<li><button id="cart-toggle" class="btn small">Carrito <span id="cart-count">0</span></button></li>
+</ul>
+</nav>
+</header>
+<div id="toast" class="toast">Producto agregado al carrito</div>
+<aside id="cart-sidebar" class="cart-sidebar">
+<div class="cart-header"><h3>Tu carrito</h3><button id="cart-close">×</button></div>
+<div id="cart-items" class="cart-items"></div>
+<div class="cart-footer"><strong id="cart-total">Total: $0</strong><button class="btn" id="finalize-btn">Finalizar</button></div>
+</aside>
+<div id="cart-backdrop" class="backdrop"></div>
+<main>
+<section id="nosotros" class="hero container">
+<div class="hero-layout">
+<figure><img src="assets/hero-mapache.png" alt="Mapache con computadora"></figure>
+<div class="hero-text"><h1>Diseño que conecta marcas</h1><p>Somos Mapache Estudio. Diseñamos con claridad y propósito: branding, UX/UI e ilustración aplicada a piezas impresas y digitales.</p></div>
+</div>
+</section>
+<section class="container servicios">
+<h2>Servicios que ofrecemos</h2>
+<div class="grid services-grid">
+<article class="service"><img src="assets/icons/branding.svg" alt="Branding"><h3>Branding</h3><p>Identidad visual y manual de marca.</p></article>
+<article class="service"><img src="assets/icons/uxui.svg" alt="UX/UI"><h3>UX / UI</h3><p>Diseño de interfaz y experiencia para web y mobile.</p></article>
+<article class="service"><img src="assets/icons/ilustracion.svg" alt="Ilustración"><h3>Ilustración</h3><p>Ilustraciones a línea y composiciones minimalistas.</p></article>
+<article class="service"><img src="assets/icons/impresos.svg" alt="Impresos"><h3>Impresos</h3><p>Tazas, totes, posters y más.</p></article>
+</div>
+</section>
+<section id="favoritos" class="container productos"><h2>Favoritos</h2><div id="favorites-grid" class="grid"></div></section>
+<section id="productos" class="container productos"><h2>Catálogo</h2><div id="product-grid" class="grid"></div></section>
+<section id="contacto" class="container contacto"><h2>Contacto</h2>
+<form id="contact-form" action="https://formspree.io/f/xnnywyez" method="POST" class="contact-block">
+<div id="form-messages"></div>
+<label>Nombre<input type="text" name="nombre" required></label>
+<label>Email<input type="email" name="email" required></label>
+<label>Mensaje<textarea name="mensaje" required></textarea></label>
+<button type="submit" class="btn">Enviar</button>
+</form>
+</section>
+</main>
+<footer>
+<div class="container footer-columns">
+<div><h4>Contacto</h4><p>📞 +54 11 5555-5555</p><p>✉ hola@mapacheestudio.com</p></div>
+<div><h4>Redes</h4><p>Instagram | Behance | LinkedIn</p></div>
+<div><h4>Ubicación</h4><iframe src="https://www.google.com/maps?q=Calle+Ficticia+123,+CABA&output=embed" width="100%" height="160" style="border:0;"></iframe></div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
