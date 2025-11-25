@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect x="0" y="0" width="640" height="360" fill="#ffffff"/>
+  <g stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="200" cy="180" r="60" fill="none"/>
+    <path d="M160 180 c20 -20 80 -20 100 0" fill="none"/>
+    <circle cx="180" cy="170" r="8"/>
+    <circle cx="220" cy="170" r="8"/>
+    <path d="M185 195 h30"/>
+    <path d="M200 240 c-30 20 -60 30 -100 35"/>
+    <path d="M200 240 c30 20 60 30 100 35"/>
+    <path d="M310 275 c40 0 60 30 60 45 c0 20 -40 25 -60 0 c-10 -12 -10 -30 0 -45"/>
+    <path d="M325 285 h40"/>
+    <path d="M330 295 h38"/>
+    <rect x="360" y="140" width="180" height="110" rx="10" fill="none"/>
+    <rect x="380" y="160" width="140" height="70" rx="6" fill="none"/>
+    <line x1="360" y1="250" x2="540" y2="250"/>
+    <path d="M420 90 h120"/>
+    <path d="M420 105 h100"/>
+    <path d="M420 120 h80"/>
+    <circle cx="500" cy="60" r="20"/>
+  </g>
+  <text x="40" y="330" font-family="Montserrat, Arial" font-size="24" fill="#111">Ilustración a línea — Mapache Estudio</text>
+</svg>

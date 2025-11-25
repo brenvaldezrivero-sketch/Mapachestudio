@@ -1,0 +1,79 @@
+/* Base */
+:root { --accent: #FF7A00; }
+* { box-sizing: border-box; }
+body {font-family:'Roboto',sans-serif;margin:0;color:#111;background:#fff;}
+img{max-width:100%;height:auto;display:block;}
+
+/* Header */
+header {background:#111;color:#fff;}
+.nav-bar {display:flex;align-items:center;justify-content:space-between;}
+.logo {font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;text-decoration:none;}
+.menu {list-style:none;display:flex;gap:16px;padding:0;margin:0;align-items:center;}
+.menu a {color:#fff;text-decoration:none;}
+.btn.small {padding:6px 10px;border-radius:6px;background:var(--accent);}
+
+/* Containers */
+.container {max-width:1080px;margin:auto;padding:20px;}
+
+/* Hero */
+.hero-layout {display:grid;grid-template-columns: 1fr 1fr;gap:24px;align-items:center;}
+.hero-text.block {max-width:520px;}
+@media (max-width:768px){.hero-layout{grid-template-columns:1fr}}
+
+/* Buttons */
+.btn {background:var(--accent);color:#fff;padding:10px 20px;border:none;border-radius:8px;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,opacity .12s ease;}
+.btn:hover {transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,.08);} 
+.btn:active {transform: translateY(0); opacity:.9;} 
+.btn:focus-visible {outline:2px solid var(--accent); outline-offset:2px;}
+.btn.ghost {background:transparent;color:var(--accent);border:1px solid var(--accent);} 
+
+/* Grid responsive */
+.grid {display:grid;gap:20px;grid-template-columns:repeat(4, minmax(220px, 1fr));}
+@media (max-width:1024px){.grid{grid-template-columns:repeat(3, minmax(220px,1fr));}}
+@media (max-width:768px){.grid{grid-template-columns:repeat(2, minmax(160px,1fr));}}
+@media (max-width:480px){.grid{grid-template-columns:1fr}}
+
+/* Cards */
+.card {border:1px solid #e7e7e7;border-radius:10px;padding:16px;display:grid;grid-template-rows:auto auto auto auto;gap:8px;}
+.card img {width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:#f7f7f7;}
+.card .title {font-weight:600;font-family:'Montserrat',sans-serif;}
+.card .actions {display:grid;grid-template-columns:1fr 1fr auto;gap:8px;}
+@media (max-width:480px){.card .actions{grid-template-columns:1fr 1fr}.card .actions .fav{grid-column:1/-1}}
+.fav {background:transparent;border:1px solid #ccc;color:#333}
+.fav.active {border-color:var(--accent);color:var(--accent)}
+
+/* Servicios vertical */
+.servicios h2 {font-family:'Montserrat',sans-serif;}
+.services-grid .service {border:1px solid #eee;border-radius:12px;padding:16px;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;gap:10px;justify-items:start;}
+.services-grid .service img{width:64px;height:64px}
+.services-grid .service h3{margin:0}
+.services-grid .service p{margin:0}
+
+/* Contacto bloque */
+.contact-block {max-width:640px;margin:0 auto;display:grid;gap:12px;}
+.contact-block label {display:grid;gap:6px}
+#form-messages {margin-bottom:10px;color:#c92c2c}
+#form-messages.success {color:#1a7f37}
+
+/* Modal */
+.modal {display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);} 
+.modal-content {background:#fff;margin:5% auto;padding:20px;max-width:640px;border-radius:12px;position:relative;} 
+.modal-close {position:absolute;right:24px;top:16px;background:transparent;border:none;font-size:24px;color:#333;cursor:pointer;} 
+
+/* Cart sidebar */
+.cart-sidebar {position:fixed;top:0;right:-380px;width:360px;height:100vh;background:#fff;box-shadow:-6px 0 18px rgba(0,0,0,.12);transition:right .2s ease;display:flex;flex-direction:column;z-index:1000;}
+.cart-sidebar.open {right:0;}
+.cart-header {display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid #eee;}
+.cart-items {flex:1;overflow:auto;padding:12px 16px;display:grid;gap:12px;}
+.cart-line {display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;border:1px solid #eee;border-radius:8px;padding:8px;}
+.cart-footer {border-top:1px solid #eee;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;}
+.backdrop {position:fixed;inset:0;background:rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:900;}
+.backdrop.show {opacity:1;pointer-events:auto;}
+
+/* Footer */
+footer {background:#111;color:#fff;}
+.footer-columns {display:grid;grid-template-columns:repeat(3, minmax(240px, 1fr));gap:20px;}
+@media (max-width:768px){.footer-columns{grid-template-columns:1fr}}
+.footer-bottom {border-top:1px solid #333;margin-top:10px;padding-top:10px;text-align:center;}
+footer a {color:#fff}
+.map iframe {border-radius:8px}
