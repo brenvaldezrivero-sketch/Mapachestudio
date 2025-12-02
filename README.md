@@ -50,21 +50,6 @@ mapache-studio/
     └── footer-fondo.png
 \`\`\`
 
-## 🚀 Instalación y Uso
-
-1. **Clonar o descargar el repositorio**
-   \`\`\`bash
-   git clone [url-del-repositorio]
-   \`\`\`
-
-2. **Abrir el proyecto**
-   - Simplemente abre el archivo `index.html` en tu navegador web
-   - O utiliza un servidor local como Live Server en VS Code
-
-3. **No requiere instalación de dependencias**
-   - El proyecto usa HTML, CSS y JavaScript puros
-   - No necesita npm, node.js u otras herramientas
-
 ## 🔑 Credenciales de Prueba
 
 Para probar el sistema de login, utiliza:
@@ -126,15 +111,9 @@ El sitio está optimizado para:
 - ✅ Validación de productos en carrito
 - ✅ Prevención de cantidades negativas o cero
 
-## 🌐 Ubicación
-
-**Dirección Física:**
-Calle Florida 165, C1005
-Ciudad Autónoma de Buenos Aires, Argentina
-
 ## 👨‍💻 Desarrollado por
 
-Mapache Studio - 2024
+Mapache Studio - 2025
 
 ## 📄 Licencia
 
